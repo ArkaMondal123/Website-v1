@@ -1,5 +1,103 @@
-<html>
-<head>
-<title> success </title>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Arka Mondal</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon-16x16.png">
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function discordbtn(){
+                document.getElementById("dcbtn").textContent = 'Copied to Clipboard!';
+                navigator.clipboard.writeText("Arka Mondal#8827");
+                const myTimeout = setTimeout(revertdc, 1000);
+            }
+            function revertdc(){
+                document.getElementById("dcbtn").textContent = 'Discord';
+            }
+            function skypebtn(){
+                document.getElementById("skypebtn").textContent = 'Redirecting to skype profile...';
+                window.open('https://join.skype.com/invite/VmpX0dSyBz1M', '_blank');
+                const myTimeout = setTimeout(revertsk, 1000);
+            }
+            function revertsk(){
+                document.getElementById("skypebtn").textContent = 'Skype';
+            }
+            function mailbtn(){
+                document.getElementById("mailbtn").textContent = 'Opening your default mail application';
+                window.open('mailto:arkamondal123xyz@gmail.com', '_blank');
+                const myTimeout = setTimeout(revertmail, 1000);
+            }
+            function revertmail(){
+                document.getElementById("mailbtn").textContent = 'E-Mail';
+            }
+        </script>
+    </head>
+    <body>
+        <div class = "background-image">
+            <img src="/images/small-profile.png" id = "avatar">
+            <h1 class="line-1 anim-typewriter">Hey, I'm Arka Mondal</h1>
+        </div>
+        <div class = "parent">
+            <div id = "child">
+                <img src="/images/code-profile.jpg" class = "dpav">
+            </div>
+            <div id = "child">
+                <h2 class = "txtd" style="margin-top: 25%;">General Info</h2>
+                <p class = "txtd" style = "margin-top: 5%;">Pronouns: He/Him</p>
+                <br>
+                <p class = "txtd">Hobbies: Tennis, Programming</p>
+                <br>
+                <p class = "txtd">Likes: Music</p>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div class = "parent">
+            <div id = "child">
+                <img src="/images/av2.png" class = "dpav">
+            </div>
+            <div id = "child">
+                <h2 class = "txtd" style="margin-top: 35%;">Python Developer at the NPSWF Tech Team</h2>
+                <p class = "txtd" style = "margin-top: 5%;">Project: Autolocum</p>
+                <br>
+                <p class = "txtd">Goal: Automating teacher substitution</p>
+                <br>
+                <p class = "txtd">Roles: Server Handler, Database Team, API Dev</p>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div class = "parent">
+            <div id = "child">
+                <img src="/images/martianbotdp.png" style = "width: 60%; margin-left: 15%;">
+            </div>
+            <div id = "child">
+                <h2 class = "txtd" style="margin-top: 20%;">MartianBot: My first "major" project</h2>
+                <p class = "txtd" style = "margin-top: 5%;">A Simple utility bot with games such as TicTacToe</p>
+                <br>
+                <p class = "txtd">Runs On: AWS EC2</p>
+                <br>
+                <p class = "txtd">Written in: Python (Using the discord.py library)</p>
+                <br>
+            </div>
+        </div>
+        <div class = "parent">
+            <div id = "child">
+                <img src="/images/contacticon.png" class = "dpav">
+            </div>
+            <div id = "child">
+                <h2 class = "txtd" style="margin-top: 35%;">Contact Info</h2>
+                <div style = "width: 700px;">
+                    <button class="button button1"  id = "dcbtn" onclick = "discordbtn()">Discord</button>
+                    <button class="button button2"  id = "skypebtn" onclick = "skypebtn()">Skype</button>
+                    <button class="button button3"  id = "mailbtn" onclick = "mailbtn()">E-Mail</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a rel="license" style = "margin : 10px;" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a>
+            <p class = "footer">Written by: Arka Mondal</p>
+            <p class = "footer">Hosted on: Github Pages</p>
+        </footer>
+    </body>
 </html>
